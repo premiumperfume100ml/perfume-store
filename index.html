@@ -11,7 +11,6 @@
     header {background: whitesmoke; padding: 25px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.08);}
     h1 {font-size: 2.2em; font-weight: 600; color: #222;}
 
-    
     .product-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -32,7 +31,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      height: 380px; /* Equal height cards */
+      height: 380px;
     }
     .product-card:hover {
       transform: translateY(-8px);
@@ -41,8 +40,8 @@
     .product-image {
       width: 100%;
       height: 280px;
-      object-fit: contain;   /* Show full image */
-      background: #f5f1f1;   /* background behind images */
+      object-fit: contain;
+      background: #f5f1f1;
       padding: 1px;
     }
     .card-body {
@@ -68,114 +67,35 @@
   </header>
 
   <main class="product-grid">
-    <!-- 20 Products -->
-    <div class="product-card" onclick="sendToInstagram('Chanel N°5')">
-      <img src="e1.jpg" alt="Chanel N°5" class="product-image">
+    <!-- Example products -->
+    <div class="product-card" onclick="sendToInstagram('THE MAN COMPANY')">
+      <img src="e1.jpg" alt="THE MAN COMPANY" class="product-image">
       <div class="card-body"><h3 class="product-title">THE MAN COMPANY </h3><p class="product-price"> ₹349 rs</p></div>
     </div>
 
-    <div class="product-card" onclick="sendToInstagram('Dior Sauvage')">
-      <img src="e2.jpg" alt="Dior Sauvage" class="product-image">
+    <div class="product-card" onclick="sendToInstagram('POLO WOODS BLACK')">
+      <img src="e2.jpg" alt="POLO WOODS BLACK" class="product-image">
       <div class="card-body"><h3 class="product-title">POLO WOODS BLACK</h3><p class="product-price"> ₹299 rs</p></div>
     </div>
 
-    <div class="product-card" onclick="sendToInstagram('Gucci Bloom')">
-      <img src="e3.jpg" alt="Gucci Bloom" class="product-image">
+    <div class="product-card" onclick="sendToInstagram('POLO WOODS RED')">
+      <img src="e3.jpg" alt="POLO WOODS RED" class="product-image">
       <div class="card-body"><h3 class="product-title">POLO WOODS RED</h3><p class="product-price">₹299 rs</p></div>
-    </div>
-
-    <div class="product-card" onclick="sendToInstagram('Tom Ford Black Orchid')">
-      <img src="e4.jpg" alt="Tom Ford Black Orchid" class="product-image">
-      <div class="card-body"><h3 class="product-title">POLO WOODS BLUE</h3><p class="product-price">₹299 rs</p></div>
-    </div>
-
-    <div class="product-card" onclick="sendToInstagram('Versace Eros')"> 
-      <img src="e5.jpg" alt="Versace Eros" class="product-image">
-      <div class="card-body"><h3 class="product-title">THE MAN COMPANY </h3><p class="product-price">₹299 rs</p></div>
-    </div>
-
-    <div class="product-card" onclick="sendToInstagram('YSL Libre')">
-      <img src="e6.jpg" alt="YSL Libre" class="product-image">
-      <div class="card-body"><h3 class="product-title">PARIS LA FRENCH</h3><p class="product-price">₹299 rs</p></div>
-    </div>
-
-    <div class="product-card" onclick="sendToInstagram('Prada Luna Rossa')">
-      <img src="e7.jpg" alt="Prada Luna Rossa" class="product-image">
-      <div class="card-body"><h3 class="product-title">Veleno Eau de </h3><p class="product-price">₹299 rs</p></div>
-    </div>
-
-    <div class="product-card" onclick="sendToInstagram('Bvlgari Aqva')">
-      <img src="e8.jpg" alt="Bvlgari Aqva" class="product-image">
-      <div class="card-body"><h3 class="product-title">THE MAN COMPANY</h3><p class="product-price">₹349 rs</p></div>
-    </div>
-
-
-    <div class="product-card" onclick="sendToInstagram('CK Eternity')">
-      <img src="e9.jpg" alt="CK Eternity" class="product-image">
-      <div class="card-body"><h3 class="product-title">Graphic Printed</h3><p class="product-price">₹299 rs</p></div>
-    </div>
-
-    <div class="product-card" onclick="sendToInstagram('Montblanc Legend')">
-      <img src="e10.jpg" alt="Montblanc Legend" class="product-image">
-      <div class="card-body"><h3 class="product-title">Panda Printed</h3><p class="product-price">₹299 rs</p></div>
-    </div>
-
-    <div class="product-card" onclick="sendToInstagram('Armani Code')">
-      <img src="e11.jpg" alt="Armani Code" class="product-image">
-      <div class="card-body"><h3 class="product-title">Polyester T-SHIRT</h3><p class="product-price">₹299 rs</p></div>
-    </div>
-
-    <div class="product-card" onclick="sendToInstagram('Hugo Boss')">
-      <img src="e12.jpg" alt="Hugo Boss" class="product-image">
-      <div class="card-body"><h3 class="product-title">BLack DEER Printed</h3><p class="product-price">₹329 rs</p></div>
-    </div>
-
-    <div class="product-card" onclick="sendToInstagram('Creed Aventus')">
-      <img src="e13.jpg" alt="Creed Aventus" class="product-image">
-      <div class="card-body"><h3 class="product-title">Black Pirate Printed</h3><p class="product-price">₹299 rs</p></div>
-    </div>
-
-    <div class="product-card" onclick="sendToInstagram('Dolce & Gabbana Light Blue')">
-      <img src="e14.jpg" alt="Dolce & Gabbana Light Blue" class="product-image">
-      <div class="card-body"><h3 class="product-title">Zoro Printed T-SHIRT</h3><p class="product-price">₹329 rs</p></div>
-    </div>
-
-    <div class="product-card" onclick="sendToInstagram('Versace Dylan Blue')">
-      <img src="e15.jpg" alt="Versace Dylan Blue" class="product-image">
-      <div class="card-body"><h3 class="product-title">Zoro Printed Black</h3><p class="product-price">₹299 rs</p></div>
-    </div>
-
-    <div class="product-card" onclick="sendToInstagram('YSL La Nuit de l’Homme')">
-      <img src="e16.jpg" alt="YSL La Nuit de l’Homme" class="product-image">
-      <div class="card-body"><h3 class="product-title">Half Sleeve Printed</h3><p class="product-price">₹299 rs</p></div>
-    </div>
-
-    <div class="product-card" onclick="sendToInstagram('Jean Paul Gaultier Le Male')">
-      <img src="e17.jpg" alt="Jean Paul Gaultier Le Male" class="product-image">
-      <div class="card-body"><h3 class="product-title">Half Sleeve Printed</h3><p class="product-price">₹299 rs</p></div>
-    </div>
-
-    <div class="product-card" onclick="sendToInstagram('Burberry Her')">
-      <img src="e18.jpg" alt="Burberry Her" class="product-image">
-      <div class="card-body"><h3 class="product-title">Half Sleeve Printed</h3><p class="product-price">₹299 rs</p></div>
-    </div>
-
-    <div class="product-card" onclick="sendToInstagram('Mugler Alien')">
-      <img src="e19.jpg" alt="Mugler Alien" class="product-image">
-      <div class="card-body"><h3 class="product-title">Half Sleeve Printed</h3><p class="product-price">₹299 rs</p></div>
-    </div>
-
-    <div class="product-card" onclick="sendToInstagram('Lacoste Blanc')">
-      <img src="e20.jpg" alt="Lacoste Blanc" class="product-image">
-      <div class="card-body"><h3 class="product-title">ORDER NOW</h3><p class="product-price"></p></div>
     </div>
   </main>
 
   <script>
     function sendToInstagram(productName) {
-      const baseLink = "https://www.instagram.com/direct/t/17843993628403722";
-      const message = encodeURIComponent("I'm interested in purchasing " + productName);
-      window.open(`${baseLink}?text=${message}`, "_blank");
+      const appLink = "instagram://user?username=imran_vlogs_009"; // App deep link
+      const webLink = "https://www.instagram.com/imran_vlogs_009?igsh=MnRkYm9wbGloOGd4"; // Fallback
+
+      // Try to open Instagram app
+      window.location.href = appLink;
+
+      // Fallback to web version after 1 second if app not available
+      setTimeout(() => {
+        window.open(webLink, "_blank");
+      }, 1000);
     }
   </script>
 </body>
